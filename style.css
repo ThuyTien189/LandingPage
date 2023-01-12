@@ -34,10 +34,10 @@ html, body {
     z-index: 10;
     animation: changeHeader .5s ease-in-out;
 }
-.header .container .logo .logo-fixed {
+.header .content .logo .logo-fixed {
     display: none;
 }
-.header .container .nav-pc {
+.header .content .nav-pc {
     width: 60%;
 }
 .nav-pc .list {
@@ -184,11 +184,12 @@ html, body {
     text-decoration: none;
 }
 .welcome .store a img {
-    width: 200px;
+    max-width: 90%;
 }
 .intro .container .img {
-    width: 28%;
+    max-width: 28%;
     text-align: center;
+    transition-duration: 2.5s;
 }
 .intro .container .img img {
     height: auto;
@@ -234,7 +235,7 @@ html, body {
 .number-counting .container .number {
     width: 100%;
     height: 80%;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 700;
     background-image: linear-gradient(-47deg, #8731E8 0%, #4528DC 100%);;
     -webkit-background-clip: text;
@@ -244,11 +245,11 @@ html, body {
     margin-right: -15px;
 }
 .number-counting .container .text {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
     color: #222222;
     line-height: 1.2;
-    margin-top: 14px;
+    margin-top: 20px;
 }
 .features {
     padding: 112px 0;
@@ -318,12 +319,15 @@ html, body {
     text-align: center;
     border-radius: 25px;
     box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.12);
-    transition-duration: .3s;
+    transition-duration: .5s;
 }
 
 .list-features .item:hover {
     transform: translateY(-10%);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 54px 0px;
+}
+[data-aos][data-aos][data-aos-duration="400"], body[data-aos-duration="400"] [data-aos] {
+    transition-duration: 1.5s !important;
 }
 .list-features .item img {
     width: 54px;
@@ -412,12 +416,12 @@ html, body {
     color: #fff;
 }
 .services .container .img {
-    width: 35%;
+    max-width: 35%;
     text-align: end;
 }
 .services .container .img img {
-    height: 90%;
-    width: 80%;
+    max-height: 90%;
+    max-width: 80%;
 }
 .discover {
     width: 100%;
@@ -430,11 +434,11 @@ html, body {
     justify-content: space-around;
 }
 .discover .container .img {
-    width: 50%;
+    max-width: 50%;
     text-align: end;
 }
 .discover .container .img img {
-    width: 85%;
+    max-width: 85%;
 }
 .discover .list-discover p {
     font-size: 16px;
@@ -530,7 +534,7 @@ html, body {
 }
 .slider-area .container,
 .process .container {
-    width: 75%;
+    width: 76%;
     margin: 0 auto;
 }
 .slider-area .container .awesome {
@@ -589,22 +593,32 @@ html, body {
 .slider img {
     width: 20%;
 }
-.dots {
-    position: absolute;
-    left: 50%;
+.slick-initialized .slick-slide {
+    margin-left: 25px;
 }
-.dot button {
+.slick-dots {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50px);
+    list-style: none;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.slick-dots button {
+    font-size: 0px;
     height: 8px;
     width: 8px;
     margin: 0 2px;
     background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
     border: none;
+    transition: background-color 0.2s ease;
     cursor: pointer;
+    border-radius: 50%;
 }
-.active button {
+.slick-dots .slick-active button {
     background-color: #7c4fe0;
     box-shadow: 0 1px 5px #7c4fe0;
 }
@@ -1318,10 +1332,19 @@ html, body {
     height: 40px;
     margin: 5px;
     text-align: center;
-    line-height: 40px;
-    font-size: 20px;
+    font-size: 18px;
     border-radius: 5px;
     color: #fff;
+    text-decoration: none;
+}
+.footer .container .row .column .list-icons .icon i {
+    display: block;
+    line-height: 40px;
+    height: 100%;
+    transition-duration: .4s;
+}
+.footer .container .row .column .list-icons .icon:hover i {
+    transform: translateY(-40px);
 }
 .fb {
     background-color: #3b5999;
@@ -1352,8 +1375,11 @@ html, body {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
+    transition-duration: .5s;
 }
-
+.footer .container .row .column ul li a:hover {
+    color: #7c4fe0;
+}
 .footer .container .row .column .store {
     width: 170px;
 }

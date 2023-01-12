@@ -7,6 +7,17 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="jquery-3.6.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer">
+    </script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>   
 </head>
 <body> 
     <div class="intro">
@@ -115,7 +126,7 @@
                 </div>
                 <p style="font-style: italic;">* Available on iPhone, iPad and all Android devices</p>
             </div>
-            <div class="img">
+            <div class="img" data-aos="fade-left">
                 <img src="https://theme-land.com/sapp/demo/assets/img/welcome/welcome-mockup.png" alt="">
             </div>
         </div>
@@ -133,28 +144,28 @@
         <div class="container">
             <div class="content">
                 <div class="number">
-                    <span class="increase-number">10</span>
+                    <span class="increase-number" id="number1">10</span>
                     <span>M</span>
                 </div>  
                 <h5 class="text">Users</h5>
             </div>
             <div class="content">
                 <div class="number">
-                    <span class="increase-number">23</span>
+                    <span class="increase-number" id="number2">23</span>
                     <span>K</span>
                 </div>
                 <h5 class="text">Download</h5>
             </div>
             <div class="content">
                 <div class="number">
-                    <span class="increase-number">9</span>
+                    <span class="increase-number" id="number3">9</span>
                     <span>M</span>
                 </div>
                 <h5 class="text">Customer</h5>
             </div>
             <div class="content">
                 <div class="number">
-                    <span class="increase-number">12</span>
+                    <span class="increase-number" id="number4">12</span>
                     <span>K</span>
                 </div>
                 <h5 class="text">Developer</h5>
@@ -172,21 +183,21 @@
             <h1>What Makes sApp Different?</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
             <div class="list-features">
-                <div class="item">
+                <div class="item" data-aos="fade-right">
                     <img src="https://theme-land.com/sapp/demo/assets/img/icon/featured-img/layers.png" alt="">
                     <div class="text">
                         <h3>Fully functional</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos.</p>
                     </div>
                 </div>
-                <div class="item">
+                <div class="item" data-aos="fade-up">
                     <img src="https://theme-land.com/sapp/demo/assets/img/icon/featured-img/speak.png" alt="">
                     <div class="text">
                         <h3>Live Chat</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos.</p>
                     </div>
                 </div>
-                <div class="item">
+                <div class="item" data-aos="fade-left">
                     <img src="https://theme-land.com/sapp/demo/assets/img/icon/featured-img/lock.png" alt="">
                     <div class="text">
                         <h3>Secure Data</h3>
@@ -351,23 +362,6 @@
                 <img class="mySlides" src="https://theme-land.com/sapp/demo/assets/img/screenshots/4.jpg">
                 <img class="mySlides" src="https://theme-land.com/sapp/demo/assets/img/screenshots/5.jpg">
             </div>
-            <div class="dots">
-                <span class="dot active">
-                    <button></button>
-                </span>
-                <span class="dot">
-                    <button></button>
-                </span>
-                <span class="dot">
-                    <button></button>
-                </span>
-                <span class="dot">
-                    <button></button>
-                </span>
-                <span class="dot">
-                    <button></button>
-                </span>
-            </div>
         </div>
     </div>
     <div class="feedback">
@@ -470,7 +464,7 @@
             <h1>Unlock Full Power Of sApp</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
             <div class="list-prices">
-                <div class="item">
+                <div class="item" data-aos="fade-right">
                     <div class="img">
                         <img src="https://theme-land.com/sapp/demo/assets/img/pricing/basic.png" alt="">
                     </div>
@@ -490,7 +484,7 @@
                         <a href="">Sign Up</a>
                     </div>
                 </div>
-                <div class="item">
+                <div class="item" data-aos="fade-left">
                     <div class="img">
                         <img src="https://theme-land.com/sapp/demo/assets/img/pricing/premium.png" alt="">
                     </div>
@@ -683,10 +677,22 @@
                     </a>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis non, fugit totam vel laboriosam vitae.</p>
                     <div class="list-icons">
-                        <a href="" class="icon fb"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="" class="icon twitter"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="" class="icon google"><i class="fa-brands fa-google-plus-g"></i></a>
-                        <a href="" class="icon vine"><i class="fa-brands fa-vine"></i></a>
+                        <a href="" class="icon fb">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </i></a>
+                        <a href="" class="icon twitter">
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="" class="icon google">
+                            <i class="fa-brands fa-google-plus-g"></i>
+                            <i class="fa-brands fa-google-plus-g"></i>
+                        </a>
+                        <a href="" class="icon vine">
+                            <i class="fa-brands fa-vine"></i>
+                            <i class="fa-brands fa-vine"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="column">

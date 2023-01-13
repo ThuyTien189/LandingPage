@@ -1,740 +1,913 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="./grid.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./responsive.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <script src="jquery-3.6.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" 
-        crossorigin="anonymous" 
-        referrerpolicy="no-referrer">
-    </script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>   
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
-<body> 
-    <div class="intro">
-        <div class="header">
-            <div class="content">
-                <a class="logo">
-                    <img src="https://theme-land.com/sapp/demo/assets/img/logo/logo-white.png" alt="" class="logo-normal">
-                    <img src="https://theme-land.com/sapp/demo/assets/img/logo/logo.png" alt="" class="logo-fixed">
-                </a>
-                <div class="nav-pc">
-                    <ul class="list">
-                        <li class="item">
-                            <a href="">
-                                Home
-                                <i class="fa-solid fa-caret-down"></i>
-                            </a>
-                            <ul class="sub-item">
-                                <li><a href="">HOMEPAGE-1</a></li>
-                                <li><a href="">HOMEPAGE-2</a></li>
-                                <li><a href="">HOMEPAGE-3</a></li>
-                                <li><a href="">HOMEPAGE-4</a></li>
-                                <li><a href="">HOMEPAGE-5</a></li>
-                                <li><a href="">HOMEPAGE-6</a></li>
+
+<body>
+    <div class="main">
+        <div class="intro">
+            <div class="header">
+                <div class="grid wide">
+
+                    <div class="content">
+                        <a class="logo">
+                            <img src="https://theme-land.com/sapp/demo/assets/img/logo/logo-white.png" alt=""
+                                class="logo-normal">
+                            <img src="https://theme-land.com/sapp/demo/assets/img/logo/logo.png" alt=""
+                                class="logo-fixed">
+                        </a>
+                        <div class="nav-pc">
+                            <ul class="list">
+                                <li class="item">
+                                    <a href="">
+                                        Home
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </a>
+                                    <ul class="sub-item">
+                                        <li><a href="">HOMEPAGE-1</a></li>
+                                        <li><a href="">HOMEPAGE-2</a></li>
+                                        <li><a href="">HOMEPAGE-3</a></li>
+                                        <li><a href="">HOMEPAGE-4</a></li>
+                                        <li><a href="">HOMEPAGE-5</a></li>
+                                        <li><a href="">HOMEPAGE-6</a></li>
+                                    </ul>
+                                </li>
+                                <li class="item">
+                                    <a href="">
+                                        Features
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="">
+                                        Pages
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </a>
+                                    <ul class="sub-item">
+                                        <li class="sub-sub-item">
+                                            <a href="">INNER PAGES <span>NEW</span></a>
+                                            <ul class="hidden-item">
+                                                <li><a href="">PRICING</a></li>
+                                                <li><a href="">DOWNLOAD</a></li>
+                                                <li><a href="">NEWSLETTER</a></li>
+                                                <li><a href="">THANK YOU</a></li>
+                                                <li><a href="">COMING SOON</a></li>
+                                                <li><a href="">404</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="sub-sub-item">
+                                            <a href="">BLOG PAGES</a>
+                                            <ul class="hidden-item">
+                                                <li><a href="">BLOG-2 COLUMN</a></li>
+                                                <li><a href="">BLOG-3 COLUMN</a></li>
+                                                <li><a href="">BLOG-LEFT SIDEBAR</a></li>
+                                                <li><a href="">BLOG-RIGHT SIDEBAR</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="sub-sub-item">
+                                            <a href="">BLOG DETAILS</a>
+                                            <ul class="hidden-item">
+                                                <li><a href="">BLOG DETAILS-LEFT SIDEBAR</a></li>
+                                                <li><a href="">BLOG DETAILS-RIGHT SIDEBAR</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="sub-sub-item">
+                                            <a href="">ACCOUNTS <span>NEW</span></a>
+                                            <ul class="hidden-item">
+                                                <li><a href="">LOGIN</a></li>
+                                                <li><a href="">SIGNUP</a></li>
+                                                <li><a href="">RESET PASSWORD</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="">REVIEWS</a></li>
+                                        <li><a href="">FAQ</a></li>
+                                        <li><a href="">CONTACT</a></li>
+                                        <li><a href="">MORE COMING SOON</a></li>
+                                    </ul>
+                                </li>
+                                <li class="item">
+                                    <a href="">
+                                        Screenshots
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="">
+                                        Pricing
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="">Contact</a>
+                                </li>
                             </ul>
-                        </li>
-                        <li class="item">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="grid wide">
+
+                <div class="container">
+                    <div class="welcome">
+                        <h1>Make cool Landing pages with sApp</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nihil tenetur minus quidem
+                            est
+                            deserunt molestias accusamus harum ullam tempore debitis et, expedita, repellat delectus
+                            aspernatur
+                            neque itaque qui quod.</p>
+                        <div class="store">
                             <a href="">
-                                Features
+                                <img src="https://theme-land.com/sapp/demo/assets/img/icon/google-play.png" alt="">
                             </a>
-                        </li>
-                        <li class="item">
                             <a href="">
-                                Pages
-                                <i class="fa-solid fa-caret-down"></i>
+                                <img src="https://theme-land.com/sapp/demo/assets/img/icon/app-store.png" alt="">
                             </a>
-                            <ul class="sub-item">
-                                <li class="sub-sub-item">
-                                    <a href="">INNER PAGES <span>NEW</span></a>
-                                    <ul class="hidden-item">
-                                        <li><a href="">PRICING</a></li>
-                                        <li><a href="">DOWNLOAD</a></li>
-                                        <li><a href="">NEWSLETTER</a></li>
-                                        <li><a href="">THANK YOU</a></li>
-                                        <li><a href="">COMING SOON</a></li>
-                                        <li><a href="">404</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sub-sub-item">
-                                    <a href="">BLOG PAGES</a>
-                                    <ul class="hidden-item">
-                                        <li><a href="">BLOG-2 COLUMN</a></li>
-                                        <li><a href="">BLOG-3 COLUMN</a></li>
-                                        <li><a href="">BLOG-LEFT SIDEBAR</a></li>
-                                        <li><a href="">BLOG-RIGHT SIDEBAR</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sub-sub-item">
-                                    <a href="">BLOG DETAILS</a>
-                                    <ul class="hidden-item">
-                                        <li><a href="">BLOG DETAILS-LEFT SIDEBAR</a></li>
-                                        <li><a href="">BLOG DETAILS-RIGHT SIDEBAR</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sub-sub-item">
-                                    <a href="">ACCOUNTS <span>NEW</span></a>
-                                    <ul class="hidden-item">
-                                        <li><a href="">LOGIN</a></li>
-                                        <li><a href="">SIGNUP</a></li>
-                                        <li><a href="">RESET PASSWORD</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="">REVIEWS</a></li>
-                                <li><a href="">FAQ</a></li>
-                                <li><a href="">CONTACT</a></li>
-                                <li><a href="">MORE COMING SOON</a></li>
-                            </ul>
-                        </li>
-                        <li class="item">
-                            <a href="">
-                                Screenshots
-                            </a>
-                        </li>
-                        <li class="item">
-                            <a href="">
-                                Pricing
-                            </a>
-                        </li>
-                        <li class="item">
-                            <a href="">Contact</a>
-                        </li>
-                    </ul>
+                        </div>
+                        <p style="font-style: italic;">* Available on iPhone, iPad and all Android devices</p>
+                    </div>
+                    <div class="img" data-aos="fade-left">
+                        <img src="https://theme-land.com/sapp/demo/assets/img/welcome/welcome-mockup.png" alt="">
+                    </div>
                 </div>
             </div>
-        </div>  
-        <div class="container">
-            <div class="welcome">
-                <h1>Make cool Landing pages with sApp</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nihil tenetur minus quidem est deserunt molestias accusamus harum ullam tempore debitis et, expedita, repellat delectus aspernatur neque itaque qui quod.</p>
-                <div class="store">
-                    <a href="">
-                        <img src="https://theme-land.com/sapp/demo/assets/img/icon/google-play.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="https://theme-land.com/sapp/demo/assets/img/icon/app-store.png" alt="">
-                    </a>
-                </div>
-                <p style="font-style: italic;">* Available on iPhone, iPad and all Android devices</p>
-            </div>
-            <div class="img" data-aos="fade-left">
-                <img src="https://theme-land.com/sapp/demo/assets/img/welcome/welcome-mockup.png" alt="">
-            </div>
-        </div>
-        <div class="shape-bottom">
-            <svg viewBox="0 0 1920 310">
-                <g id="Landing-Page" stroke="none" stroke-width="12" fill="none" fill-rule="evenodd">
-                    <g id="sApp-v1.0" transform="translate(0.000000, -554.000000)" fill="#ffffff">
-                        <path d="M-3,551 C186.257589,757.321118 319.044414,856.322454 395.360475,848.004007 C509.834566,835.526337 561.525143,796.329212 637.731734,765.961549 C713.938325,735.593886 816.980646,681.910577 1035.72208,733.065469 C1254.46351,784.220361 1511.54925,678.92359 1539.40808,662.398665 C1567.2669,645.87374 1660.9143,591.478574 1773.19378,597.641868 C1848.04677,601.75073 1901.75645,588.357675 1934.32284,557.462704 L1934.32284,863.183395 L-3,863.183395" id="v1.0"></path>
+
+            <div class="shape-bottom">
+                <svg viewBox="0 0 1920 310">
+                    <g id="Landing-Page" stroke="none" stroke-width="12" fill="none" fill-rule="evenodd">
+                        <g id="sApp-v1.0" transform="translate(0.000000, -554.000000)" fill="#ffffff">
+                            <path
+                                d="M-3,551 C186.257589,757.321118 319.044414,856.322454 395.360475,848.004007 C509.834566,835.526337 561.525143,796.329212 637.731734,765.961549 C713.938325,735.593886 816.980646,681.910577 1035.72208,733.065469 C1254.46351,784.220361 1511.54925,678.92359 1539.40808,662.398665 C1567.2669,645.87374 1660.9143,591.478574 1773.19378,597.641868 C1848.04677,601.75073 1901.75645,588.357675 1934.32284,557.462704 L1934.32284,863.183395 L-3,863.183395"
+                                id="v1.0"></path>
+                        </g>
                     </g>
-                </g>
-            </svg>
-        </div>
-    </div>
-    <div class="number-counting">
-        <div class="container">
-            <div class="content">
-                <div class="number">
-                    <span class="increase-number" id="number1">10</span>
-                    <span>M</span>
-                </div>  
-                <h5 class="text">Users</h5>
-            </div>
-            <div class="content">
-                <div class="number">
-                    <span class="increase-number" id="number2">23</span>
-                    <span>K</span>
-                </div>
-                <h5 class="text">Download</h5>
-            </div>
-            <div class="content">
-                <div class="number">
-                    <span class="increase-number" id="number3">9</span>
-                    <span>M</span>
-                </div>
-                <h5 class="text">Customer</h5>
-            </div>
-            <div class="content">
-                <div class="number">
-                    <span class="increase-number" id="number4">12</span>
-                    <span>K</span>
-                </div>
-                <h5 class="text">Developer</h5>
+                </svg>
             </div>
         </div>
-    </div>
-    <div class="features">
-        <div class="container">
-            <div class="premium">
-                <span class="purple-item">
-                    <i class="fa-regular fa-lightbulb"></i>
-                    Premium</span>
-                <span>Features</span>
+        <div class="number-counting">
+            <div class="grid wide">
+
+                <div class="container">
+                    <div class="content">
+                        <div class="number">
+                            <span class="increase-number" id="number1">10</span>
+                            <span>M</span>
+                        </div>
+                        <h5 class="text">Users</h5>
+                    </div>
+                    <div class="content">
+                        <div class="number">
+                            <span class="increase-number" id="number2">23</span>
+                            <span>K</span>
+                        </div>
+                        <h5 class="text">Download</h5>
+                    </div>
+                    <div class="content">
+                        <div class="number">
+                            <span class="increase-number" id="number3">9</span>
+                            <span>M</span>
+                        </div>
+                        <h5 class="text">Customer</h5>
+                    </div>
+                    <div class="content">
+                        <div class="number">
+                            <span class="increase-number" id="number4">12</span>
+                            <span>K</span>
+                        </div>
+                        <h5 class="text">Developer</h5>
+                    </div>
+                </div>
             </div>
-            <h1>What Makes sApp Different?</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
-            <div class="list-features">
-                <div class="item" data-aos="fade-right">
-                    <img src="https://theme-land.com/sapp/demo/assets/img/icon/featured-img/layers.png" alt="">
+
+        </div>
+        <div class="features">
+            <div class="grid wide">
+
+                <div class="container">
+                    <div class="premium">
+                        <span class="purple-item">
+                            <i class="fa-regular fa-lightbulb"></i>
+                            Premium</span>
+                        <span>Features</span>
+                    </div>
+                    <h1>What Makes sApp Different?</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo
+                        ad
+                        iste
+                        ipsum officiis deleniti asperiores sit.</p>
+                    <div class="list-features">
+                        <div class="item" data-aos="fade-right">
+                            <img src="https://theme-land.com/sapp/demo/assets/img/icon/featured-img/layers.png" alt="">
+                            <div class="text">
+                                <h3>Fully functional</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita
+                                    dignissimos.</p>
+                            </div>
+                        </div>
+                        <div class="item" data-aos="fade-up">
+                            <img src="https://theme-land.com/sapp/demo/assets/img/icon/featured-img/speak.png" alt="">
+                            <div class="text">
+                                <h3>Live Chat</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita
+                                    dignissimos.</p>
+                            </div>
+                        </div>
+                        <div class="item" data-aos="fade-left">
+                            <img src="https://theme-land.com/sapp/demo/assets/img/icon/featured-img/lock.png" alt="">
+                            <div class="text">
+                                <h3>Secure Data</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita
+                                    dignissimos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="services">
+            <div class="grid wide">
+
+                <div class="container">
+                    <div class="list-services">
+                        <h2>Make Your Device Manage Everything For You</h2>
+                        <ul class="list-items">
+                            <li class="item">
+                                <div class="icon">
+                                    <i class="fa-solid fa-layer-group"></i>
+                                </div>
+                                <div class="text">
+                                    <p>Fully layered dolor sit amet, consectetur adipisicing elit. Facere, nobis, id
+                                        expedita
+                                        dolores officiis laboriosam.</p>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="icon">
+                                    <i class="fa-solid fa-brush"></i>
+                                </div>
+                                <div class="text">
+                                    <p>Customizable design dolor sit amet, consectetur adipisicing elit. Facere, nobis,
+                                        id
+                                        expedita dolores officiis laboriosam.</p>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="icon">
+                                    <i class="fa-solid fa-fire-flame-simple"></i>
+                                </div>
+                                <div class="text">
+                                    <p>Drop ipsum dolor sit amet, consectetur adipisicing elit. Facere, nobis, id
+                                        expedita
+                                        dolores officiis laboriosam.</p>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="icon">
+                                    <i class="fa-solid fa-cart-arrow-down"></i>
+                                </div>
+                                <div class="text">
+                                    <p>Marketing chart dolor sit amet, consectetur adipisicing elit. Facere, nobis, id
+                                        expedita
+                                        dolores officiis laboriosam.</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="button">
+                            <a href="">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="https://theme-land.com/sapp/demo/assets/img/features/thumb-1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="discover">
+            <div class="grid wide">
+                <div class="container">
+                    <div class="img">
+                        <img src="https://theme-land.com/sapp/demo/assets/img/discover/iphone_x.png" alt="">
+                    </div>
+                    <div class="list-discover">
+                        <h2>Easily communicate with clients using sApp.</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique dolor ut iusto vitae
+                            autem
+                            neque
+                            eum ipsam.</p>
+                        <ul class="list-items">
+                            <li class="item">
+                                <div class="icon">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <div class="text">
+                                    <p>Combined with a handful of model sentence structures looks reasonable.</p>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="icon">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <div class="text">
+                                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="icon">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <div class="text">
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="icon">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <div class="text">
+                                    <p>All the Lorem Ipsum generators on the Internet tend to repeat necessary.</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="list-icons">
+                            <div class="icon">
+                                <i class="fa-solid fa-bell"></i>
+                            </div>
+                            <div class="icon">
+                                <i class="fa-solid fa-envelope-open"></i>
+                            </div>
+                            <div class="icon">
+                                <i class="fa-solid fa-video"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="process">
+            <div class="grid wide">
+
+                <div class="container">
+                    <h1>How sApp works?</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo
+                        ad
+                        iste
+                        ipsum officiis deleniti asperiores sit.</p>
+                    <div class="list-process">
+                        <div class="item">
+                            <div class="icon">
+                                <img src="https://theme-land.com/sapp/demo/assets/img/icon/work/download.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h3>Install the App</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius saepe, voluptates quis
+                                    enim
+                                    incidunt obcaecati?</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="icon">
+                                <img src="https://theme-land.com/sapp/demo/assets/img/icon/work/settings.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h3>Install the App</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius saepe, voluptates quis
+                                    enim
+                                    incidunt obcaecati?</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="icon">
+                                <img src="https://theme-land.com/sapp/demo/assets/img/icon/work/app.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h3>Enjoy the features!</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius saepe, voluptates quis
+                                    enim
+                                    incidunt obcaecati?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="slider-area">
+            <div class="grid wide">
+
+                <div class="container">
+                    <div class="awesome">
+                        <span class="purple-item">
+                            <i class="fa-regular fa-lightbulb"></i>
+                            Awesome</span>
+                        <span>Interface</span>
+                    </div>
+                    <h1>Simple & Beautiful Interface</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo
+                        ad
+                        iste
+                        ipsum officiis deleniti asperiores sit.</p>
+                    <div class="slider" id="slider">
+                        <img class="mySlides" src="https://theme-land.com/sapp/demo/assets/img/screenshots/1.jpg">
+                        <img class="mySlides" src="https://theme-land.com/sapp/demo/assets/img/screenshots/2.jpg">
+                        <img class="mySlides" src="https://theme-land.com/sapp/demo/assets/img/screenshots/3.jpg">
+                        <img class="mySlides" src="https://theme-land.com/sapp/demo/assets/img/screenshots/4.jpg">
+                        <img class="mySlides" src="https://theme-land.com/sapp/demo/assets/img/screenshots/5.jpg">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="feedback">
+            <div class="grid wide">
+                <div class="container">
+                    <div class="customer">
+                        <span class="purple-item">
+                            <i class="fa-regular fa-lightbulb"></i>
+                            Customer's</span>
+                        <span>Reviews</span>
+                    </div>
+                    <h1>What Our Customers Are Saying</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo
+                        ad
+                        iste
+                        ipsum officiis deleniti asperiores sit.</p>
+                    <div class="list-feedback">
+                        <div class="item">
+                            <div class="feedback-text">
+                                <div class="icon">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="quot-icon">
+                                    <img src="https://theme-land.com/sapp/demo/assets/img/icon/quote.png" alt="">
+                                </div>
+                                <h4>Excellent service & support!!</h4>
+                                <div class="text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis nam id facilis,
+                                        provident
+                                        doloremque placeat eveniet molestias laboriosam. Optio, esse.</p>
+                                </div>
+                            </div>
+                            <div class="feedback-customer">
+                                <div class="img">
+                                    <img src="https://theme-land.com/sapp/demo/assets/img/avatar/avatar-1.png" alt="">
+                                </div>
+                                <div class="infor">
+                                    <h5>Junaid Hasan</h5>
+                                    <h6>CEO, Themeland</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="feedback-text">
+                                <div class="icon">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                                <div class="quot-icon">
+                                    <img src="https://theme-land.com/sapp/demo/assets/img/icon/quote.png" alt="">
+                                </div>
+                                <h4>Nice work! Keep it up</h4>
+                                <div class="text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis nam id facilis,
+                                        provident
+                                        doloremque placeat eveniet molestias laboriosam. Optio, esse.</p>
+                                </div>
+                            </div>
+                            <div class="feedback-customer">
+                                <div class="img">
+                                    <img src="https://theme-land.com/sapp/demo/assets/img/avatar/avatar-2.png" alt="">
+                                </div>
+                                <div class="infor">
+                                    <h5>Junaid Hasan</h5>
+                                    <h6>CEO, Themeland</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="feedback-text">
+                                <div class="icon">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="quot-icon">
+                                    <img src="https://theme-land.com/sapp/demo/assets/img/icon/quote.png" alt="">
+                                </div>
+                                <h4>Great support!!</h4>
+                                <div class="text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis nam id facilis,
+                                        provident
+                                        doloremque placeat eveniet molestias laboriosam. Optio, esse.</p>
+                                </div>
+                            </div>
+                            <div class="feedback-customer">
+                                <div class="img">
+                                    <img src="https://theme-land.com/sapp/demo/assets/img/avatar/avatar-3.png" alt="">
+                                </div>
+                                <div class="infor">
+                                    <h5>Junaid Hasan</h5>
+                                    <h6>CEO, Themeland</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="prices">
+            <div class="grid wide">
+                <div class="container">
+                    <h1>Unlock Full Power Of sApp</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo
+                        ad
+                        iste
+                        ipsum officiis deleniti asperiores sit.</p>
+                    <div class="list-prices">
+                        <div class="item" data-aos="fade-right">
+                            <div class="img">
+                                <img src="https://theme-land.com/sapp/demo/assets/img/pricing/basic.png" alt="">
+                            </div>
+                            <h4>BASIC</h4>
+                            <div class="total">
+                                <h1><span>$</span>49</h1>
+                            </div>
+                            <div class="description">
+                                <ul>
+                                    <li>5GB Linux Web Space</li>
+                                    <li>5 MySQL Databases</li>
+                                    <li>24/7 Tech Support</li>
+                                    <li>Daily Backups</li>
+                                </ul>
+                            </div>
+                            <div class="button">
+                                <a href="">Sign Up</a>
+                            </div>
+                        </div>
+                        <div class="item" data-aos="fade-left">
+                            <div class="img">
+                                <img src="https://theme-land.com/sapp/demo/assets/img/pricing/premium.png" alt="">
+                            </div>
+                            <h4>PRO</h4>
+                            <div class="total">
+                                <h1><span>$</span>129</h1>
+                            </div>
+                            <div class="description">
+                                <ul>
+                                    <li>10GB Linux Web Space</li>
+                                    <li>50 MySQL Databases</li>
+                                    <li>Unlimited Email</li>
+                                    <li>Daily Backups</li>
+                                </ul>
+                            </div>
+                            <div class="button">
+                                <a href="">Sign Up</a>
+                            </div>
+                        </div>
+                    </div>
                     <div class="text">
-                        <h3>Fully functional</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos.</p>
-                    </div>
-                </div>
-                <div class="item" data-aos="fade-up">
-                    <img src="https://theme-land.com/sapp/demo/assets/img/icon/featured-img/speak.png" alt="">
-                    <div class="text">
-                        <h3>Live Chat</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos.</p>
-                    </div>
-                </div>
-                <div class="item" data-aos="fade-left">
-                    <img src="https://theme-land.com/sapp/demo/assets/img/icon/featured-img/lock.png" alt="">
-                    <div class="text">
-                        <h3>Secure Data</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos.</p>
+                        <p>Not sure what to choose? <a href="">Contact Us</a></p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="services">
-        <div class="container">
-            <div class="list-services">
-                <h2>Make Your Device Manage Everything For You</h2>
-                <ul class="list-items">
-                    <li class="item">
-                        <div class="icon">
-                            <i class="fa-solid fa-layer-group"></i>
+        <div class="questions">
+            <div class="grid wide">
+
+                <div class="container">
+                    <h1>Frequently Asked Questions</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo
+                        ad
+                        iste
+                        ipsum officiis deleniti asperiores sit.</p>
+                    <div class="list-questions">
+                        <div class="item">
+                            <h2>How to install sApp?</h2>
+                            <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+                                letters,
+                                as
+                                opposed to using 'Content here, content here', making it look like readable English.
+                                Many
+                                desktop publishing packages and web page editors now use Lorem Ipsum as their default
+                                model
+                                text.</p>
+                            <h2>Can I get support from the Author?</h2>
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                                piece of
+                                classical Latin literature from 45 BC, making it over 2000 years old. Richard
+                                McClintock, a
+                                Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure
+                                Latin
+                                words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word
+                                in
+                                classical literature, discovered the undoubtable source.</p>
+                            <h2>Do you have a free trail?</h2>
+                            <p>It has survived not only five centuries, but also the leap into electronic typesetting,
+                                remaining
+                                essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                                sheets
+                                containing Lorem Ipsum passages, and more recently with desktop publishing software like
+                                Aldus
+                                PageMaker including versions of Lorem Ipsum.</p>
                         </div>
-                        <div class="text">
-                            <p>Fully layered dolor sit amet, consectetur adipisicing elit. Facere, nobis, id expedita dolores officiis laboriosam.</p>
+                        <div class="item">
+                            <h2>How can I edit my personal information?</h2>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium,
+                                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                                beatae
+                                vitae
+                                dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                                aut
+                                fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                            </p>
+                            <h2>Contact form isn't working?</h2>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered
+                                alteration in some form, by injected humour, or randomised words which don't look even
+                                slightly
+                                believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there
+                                isn't
+                                anything embarrassing hidden in the middle of text.</p>
+                            <h2>Contact form isn't working?</h2>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered
+                                alteration in some form, by injected humour, or randomised words which don't look even
+                                slightly
+                                believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there
+                                isn't
+                                anything embarrassing hidden in the middle of text.</p>
                         </div>
-                    </li>
-                    <li class="item">
-                        <div class="icon">
-                            <i class="fa-solid fa-brush"></i>
-                        </div>
-                        <div class="text">
-                            <p>Customizable design dolor sit amet, consectetur adipisicing elit. Facere, nobis, id expedita dolores officiis laboriosam.</p>
-                        </div>
-                    </li>
-                    <li class="item">
-                        <div class="icon">
-                            <i class="fa-solid fa-fire-flame-simple"></i>
-                        </div>
-                        <div class="text">
-                            <p>Drop ipsum dolor sit amet, consectetur adipisicing elit. Facere, nobis, id expedita dolores officiis laboriosam.</p>
-                        </div>
-                    </li>
-                    <li class="item">
-                        <div class="icon">
-                            <i class="fa-solid fa-cart-arrow-down"></i>
-                        </div>
-                        <div class="text">
-                            <p>Marketing chart dolor sit amet, consectetur adipisicing elit. Facere, nobis, id expedita dolores officiis laboriosam.</p>
-                        </div>
-                    </li>
-                </ul>
-                <div class="button">
-                    <a href="">Learn More</a>
-                </div> 
-            </div>
-            <div class="img">
-                <img src="https://theme-land.com/sapp/demo/assets/img/features/thumb-1.png" alt="">
-            </div>
-        </div>
-    </div>
-    <div class="discover">
-        <div class="container">
-            <div class="img">
-                <img src="https://theme-land.com/sapp/demo/assets/img/discover/iphone_x.png" alt="">
-            </div>
-            <div class="list-discover">
-                <h2>Easily communicate with clients using sApp.</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique dolor ut iusto vitae autem neque eum ipsam.</p>
-                <ul class="list-items">
-                    <li class="item">
-                        <div class="icon">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                        <div class="text">
-                            <p>Combined with a handful of model sentence structures looks reasonable.</p>
-                        </div>
-                    </li>
-                    <li class="item">
-                        <div class="icon">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                        <div class="text">
-                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
-                        </div>
-                    </li>
-                    <li class="item">
-                        <div class="icon">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                        <div class="text">
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
-                        </div>
-                    </li>
-                    <li class="item">
-                        <div class="icon">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                        <div class="text">
-                            <p>All the Lorem Ipsum generators on the Internet tend to repeat necessary.</p>
-                        </div>
-                    </li>
-                </ul>
-                <div class="list-icons">
-                    <div class="icon">
-                        <i class="fa-solid fa-bell"></i>
-                    </div>
-                    <div class="icon">
-                        <i class="fa-solid fa-envelope-open"></i>
-                    </div>
-                    <div class="icon">
-                        <i class="fa-solid fa-video"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="process">
-        <div class="container">
-            <h1>How sApp works?</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
-            <div class="list-process">
-                <div class="item">
-                    <div class="icon">
-                        <img src="https://theme-land.com/sapp/demo/assets/img/icon/work/download.png" alt="">
                     </div>
                     <div class="text">
-                        <h3>Install the App</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius saepe, voluptates quis enim incidunt obcaecati?</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="icon">
-                        <img src="https://theme-land.com/sapp/demo/assets/img/icon/work/settings.png" alt="">
-                    </div>
-                    <div class="text">
-                        <h3>Install the App</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius saepe, voluptates quis enim incidunt obcaecati?</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="icon">
-                        <img src="https://theme-land.com/sapp/demo/assets/img/icon/work/app.png" alt="">
-                    </div>
-                    <div class="text">
-                        <h3>Enjoy the features!</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius saepe, voluptates quis enim incidunt obcaecati?</p>
+                        <p>Haven't find suitable answer? <a href="">Tell us what you need.</a></p>
                     </div>
                 </div>
             </div>
+
         </div>
-    </div>
-    <div class="slider-area">
-        <div class="container">
-            <div class="awesome">
-                <span class="purple-item">
-                    <i class="fa-regular fa-lightbulb"></i>
-                    Awesome</span>
-                <span>Interface</span>
-            </div>
-            <h1>Simple & Beautiful Interface</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
-            <div class="slider" id="slider">
-                <img class="mySlides" src="https://theme-land.com/sapp/demo/assets/img/screenshots/1.jpg">
-                <img class="mySlides" src="https://theme-land.com/sapp/demo/assets/img/screenshots/2.jpg">
-                <img class="mySlides" src="https://theme-land.com/sapp/demo/assets/img/screenshots/3.jpg">
-                <img class="mySlides" src="https://theme-land.com/sapp/demo/assets/img/screenshots/4.jpg">
-                <img class="mySlides" src="https://theme-land.com/sapp/demo/assets/img/screenshots/5.jpg">
-            </div>
-        </div>
-    </div>
-    <div class="feedback">
-        <div class="container">
-            <div class="customer">
-                <span class="purple-item">
-                    <i class="fa-regular fa-lightbulb"></i>
-                    Customer's</span>
-                <span>Reviews</span>
-            </div>
-            <h1>What Our Customers Are Saying</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
-            <div class="list-feedback">
-                <div class="item">
-                    <div class="feedback-text">
-                        <div class="icon">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <div class="quot-icon">
-                            <img src="https://theme-land.com/sapp/demo/assets/img/icon/quote.png" alt="">
-                        </div>
-                        <h4>Excellent service & support!!</h4>
-                        <div class="text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis nam id facilis, provident doloremque placeat eveniet molestias laboriosam. Optio, esse.</p>
-                        </div>
-                    </div>
-                    <div class="feedback-customer">
-                        <div class="img">
+        <div class="team-experts">
+            <div class="grid wide">
+
+                <div class="container">
+                    <h1>Our Team Experts</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo
+                        ad
+                        iste
+                        ipsum officiis deleniti asperiores sit.</p>
+                    <div class="teams">
+                        <div class="person">
                             <img src="https://theme-land.com/sapp/demo/assets/img/avatar/avatar-1.png" alt="">
+                            <div class="overlay">
+                                <h5>Junaid Hasan</h5>
+                                <h6>Founder & CEO</h6>
+                                <div class="icon">
+                                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                    <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+                                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="infor">
-                            <h5>Junaid Hasan</h5>
-                            <h6>CEO, Themeland</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="feedback-text">
-                        <div class="icon">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                        <div class="quot-icon">
-                            <img src="https://theme-land.com/sapp/demo/assets/img/icon/quote.png" alt="">
-                        </div>
-                        <h4>Nice work! Keep it up</h4>
-                        <div class="text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis nam id facilis, provident doloremque placeat eveniet molestias laboriosam. Optio, esse.</p>
-                        </div>
-                    </div>
-                    <div class="feedback-customer">
-                        <div class="img">
+                        <div class="person">
                             <img src="https://theme-land.com/sapp/demo/assets/img/avatar/avatar-2.png" alt="">
+                            <div class="overlay">
+                                <h5>Jassica William</h5>
+                                <h6>Co-Founder</h6>
+                                <div class="icon">
+                                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                    <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+                                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="infor">
-                            <h5>Junaid Hasan</h5>
-                            <h6>CEO, Themeland</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="feedback-text">
-                        <div class="icon">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <div class="quot-icon">
-                            <img src="https://theme-land.com/sapp/demo/assets/img/icon/quote.png" alt="">
-                        </div>
-                        <h4>Great support!!</h4>
-                        <div class="text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis nam id facilis, provident doloremque placeat eveniet molestias laboriosam. Optio, esse.</p>
-                        </div>
-                    </div>
-                    <div class="feedback-customer">
-                        <div class="img">
+                        <div class="person">
                             <img src="https://theme-land.com/sapp/demo/assets/img/avatar/avatar-3.png" alt="">
+                            <div class="overlay">
+                                <h5>Md. Arham</h5>
+                                <h6>Web Developer</h6>
+                                <div class="icon">
+                                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                    <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+                                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="infor">
-                            <h5>Junaid Hasan</h5>
-                            <h6>CEO, Themeland</h6>
+                        <div class="person">
+                            <img src="https://theme-land.com/sapp/demo/assets/img/avatar/avatar-4.png" alt="">
+                            <div class="overlay">
+                                <h5>Yasmin Akter</h5>
+                                <h6>Graphic Designer</h6>
+                                <div class="icon">
+                                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                    <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+                                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
-    </div>
-    <div class="prices">
-        <div class="container">
-            <h1>Unlock Full Power Of sApp</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
-            <div class="list-prices">
-                <div class="item" data-aos="fade-right">
-                    <div class="img">
-                        <img src="https://theme-land.com/sapp/demo/assets/img/pricing/basic.png" alt="">
+        <div class="downloads">
+            <div class="grid wide">
+                <div class="container">
+                    <h1>sApp is available for all devices</h1>
+                    <p class="text">sApp is available for all devices, consectetur adipisicing elit. Itaque at harum
+                        quam
+                        explicabo. Aliquam optio, delectus, dolorem quod neque eos totam. Delectus quae animi tenetur
+                        voluptates
+                        doloribus commodi dicta modi aliquid deserunt, quis maiores nesciunt autem, aperiam natus.</p>
+                    <div class="store">
+                        <a href="">
+                            <img src="https://theme-land.com/sapp/demo/assets/img/icon/google-play.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="https://theme-land.com/sapp/demo/assets/img/icon/app-store.png" alt="">
+                        </a>
                     </div>
-                    <h4>BASIC</h4>
-                    <div class="total">
-                        <h1><span>$</span>49</h1>
-                    </div>
-                    <div class="description">
-                        <ul>
-                            <li>5GB Linux Web Space</li>
-                            <li>5 MySQL Databases</li>
-                            <li>24/7 Tech Support</li>
-                            <li>Daily Backups</li>
-                        </ul>
-                    </div>
-                    <div class="button">
-                        <a href="">Sign Up</a>
-                    </div>
-                </div>
-                <div class="item" data-aos="fade-left">
-                    <div class="img">
-                        <img src="https://theme-land.com/sapp/demo/assets/img/pricing/premium.png" alt="">
-                    </div>
-                    <h4>PRO</h4>
-                    <div class="total">
-                        <h1><span>$</span>129</h1>
-                    </div>
-                    <div class="description">
-                        <ul>
-                            <li>10GB Linux Web Space</li>
-                            <li>50 MySQL Databases</li>
-                            <li>Unlimited Email</li>
-                            <li>Daily Backups</li>
-                        </ul>
-                    </div>
-                    <div class="button">
-                        <a href="">Sign Up</a>
-                    </div>
+                    <p style="font-style: italic;">* Available on iPhone, iPad and all Android devices</p>
                 </div>
             </div>
-            <div class="text">
-                <p>Not sure what to choose? <a href="">Contact Us</a></p>
-            </div>
+
         </div>
-    </div>
-    <div class="questions">
-        <div class="container">
-            <h1>Frequently Asked Questions</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
-            <div class="list-questions">
-                <div class="item">
-                    <h2>How to install sApp?</h2>
-                    <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text.</p>
-                    <h2>Can I get support from the Author?</h2>
-                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
-                    <h2>Do you have a free trail?</h2>
-                    <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                </div>
-                <div class="item">
-                    <h2>How can I edit my personal information?</h2>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                    <h2>Contact form isn't working?</h2>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
-                    <h2>Contact form isn't working?</h2>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+        <div class="subscribe">
+            <div class="grid wide">
+
+                <div class="container">
+                    <h1>Subscribe to get updates</h1>
+                    <p>By subscribing you will get newsleter, promotions adipisicing elit. Architecto beatae, asperiores
+                        tempore
+                        repudiandae saepe aspernatur unde voluptate sapiente quia ex.</p>
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
                 </div>
             </div>
-            <div class="text">
-                <p>Haven't find suitable answer? <a href="">Tell us what you need.</a></p>
-            </div>
+
         </div>
-    </div>
-    <div class="team-experts">
-        <div class="container">
-            <h1>Our Team Experts</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
-            <div class="teams">
-                <div class="person">
-                    <img src="https://theme-land.com/sapp/demo/assets/img/avatar/avatar-1.png" alt="">
-                    <div class="overlay">
-                        <h5>Junaid Hasan</h5>
-                        <h6>Founder & CEO</h6>
-                        <div class="icon">
-                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href=""><i class="fa-brands fa-twitter"></i></a>
-                            <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
-                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+        <div class="contact">
+            <div class="grid wide">
+
+                <div class="container">
+                    <h1>Stay Tuned</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo
+                        ad
+                        iste
+                        ipsum officiis deleniti asperiores sit.</p>
+                    <div class="list-contact">
+                        <div class="contacts-items">
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                                piece of
+                                classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                            <ul class="list-items">
+                                <li class="item">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-house"></i>
+                                    </div>
+                                    <div class="text">
+                                        <p>Vestibulum nulla libero, convallis, tincidunt suscipit diam, DC 2002</p>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div>
+                                    <div class="text">
+                                        <p>+1 230 456 789-012 345 6789</p>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                    <div class="text">
+                                        <p>exampledomain@domain.com</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="send-message">
+                            <input type="text" placeholder="Name" required>
+                            <input type="email" placeholder="Email" required>
+                            <input type="text" placeholder="Subject" required>
+                            <textarea placeholder="Message" required></textarea>
+                            <button type="submit">
+                                <i class="fa-solid fa-paper-plane"></i>
+                                Send Message
+                            </button>
                         </div>
                     </div>
-                </div>
-                <div class="person">
-                    <img src="https://theme-land.com/sapp/demo/assets/img/avatar/avatar-2.png" alt="">
-                    <div class="overlay">
-                        <h5>Jassica William</h5>
-                        <h6>Co-Founder</h6>
-                        <div class="icon">
-                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href=""><i class="fa-brands fa-twitter"></i></a>
-                            <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
-                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="person">
-                    <img src="https://theme-land.com/sapp/demo/assets/img/avatar/avatar-3.png" alt="">
-                    <div class="overlay">
-                        <h5>Md. Arham</h5>
-                        <h6>Web Developer</h6>
-                        <div class="icon">
-                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href=""><i class="fa-brands fa-twitter"></i></a>
-                            <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
-                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="person">
-                    <img src="https://theme-land.com/sapp/demo/assets/img/avatar/avatar-4.png" alt="">
-                    <div class="overlay">
-                        <h5>Yasmin Akter</h5>
-                        <h6>Graphic Designer</h6>
-                        <div class="icon">
-                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href=""><i class="fa-brands fa-twitter"></i></a>
-                            <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
-                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                        </div>
-                    </div>    
+
                 </div>
             </div>
+
         </div>
-    </div>
-    <div class="downloads">
-        <div class="container">
-            <h1>sApp is available for all devices</h1>
-            <p class="text">sApp is available for all devices, consectetur adipisicing elit. Itaque at harum quam explicabo. Aliquam optio, delectus, dolorem quod neque eos totam. Delectus quae animi tenetur voluptates doloribus commodi dicta modi aliquid deserunt, quis maiores nesciunt autem, aperiam natus.</p>
-            <div class="store">
-                <a href="">
-                    <img src="https://theme-land.com/sapp/demo/assets/img/icon/google-play.png" alt="">
-                </a>
-                <a href="">
-                    <img src="https://theme-land.com/sapp/demo/assets/img/icon/app-store.png" alt="">
-                </a>
-            </div>
-            <p style="font-style: italic;">* Available on iPhone, iPad and all Android devices</p>
-        </div>    
-    </div>
-    <div class="subscribe">
-        <div class="container">
-            <h1>Subscribe to get updates</h1>
-            <p>By subscribing you will get newsleter, promotions adipisicing elit. Architecto beatae, asperiores tempore repudiandae saepe aspernatur unde voluptate sapiente quia ex.</p>
-            <input type="email" placeholder="Enter your email">
-            <button type="submit">Subscribe</button>
-        </div>   
-    </div>
-    <div class="contact">
-        <div class="container">
-            <h1>Stay Tuned</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
-            <div class="list-contact">
-                <div class="contacts-items">
-                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-                    <ul class="list-items">
-                        <li class="item">
-                            <div class="icon">
-                                <i class="fa-solid fa-house"></i>
+        <div class="footer">
+            <div class="grid wide">
+                <div class="container">
+                    <div class="row">
+                        <div class="column">
+                            <a href="">
+                                <img src="https://theme-land.com/sapp/demo/assets/img/logo/logo.png" alt="">
+                            </a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis non, fugit totam vel
+                                laboriosam
+                                vitae.</p>
+                            <div class="list-icons">
+                                <a href="" class="icon fb">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    </i></a>
+                                <a href="" class="icon twitter">
+                                    <i class="fa-brands fa-twitter"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                                <a href="" class="icon google">
+                                    <i class="fa-brands fa-google-plus-g"></i>
+                                    <i class="fa-brands fa-google-plus-g"></i>
+                                </a>
+                                <a href="" class="icon vine">
+                                    <i class="fa-brands fa-vine"></i>
+                                    <i class="fa-brands fa-vine"></i>
+                                </a>
                             </div>
-                            <div class="text">
-                                <p>Vestibulum nulla libero, convallis, tincidunt suscipit diam, DC 2002</p>
+                        </div>
+                        <div class="column">
+                            <h3>Useful Links</h3>
+                            <ul class="links">
+                                <li><a href="">Home</a></li>
+                                <li><a href="">About Us</a></li>
+                                <li><a href="">Services</a></li>
+                                <li><a href="">Blog</a></li>
+                                <li><a href="">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <h3>Product Help</h3>
+                            <ul class="products">
+                                <li><a href="">FAQ</a></li>
+                                <li><a href="">Privacy Policy</a></li>
+                                <li><a href="">Support</a></li>
+                                <li><a href="">Terms & Conditions</a></li>
+                                <li><a href="">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <h3>Download</h3>
+                            <div class="store">
+                                <a href="">
+                                    <img src="https://theme-land.com/sapp/demo/assets/img/icon/google-play-black.png"
+                                        alt="">
+                                </a>
+                                <a href="">
+                                    <img src="https://theme-land.com/sapp/demo/assets/img/icon/app-store-black.png"
+                                        alt="">
+                                </a>
                             </div>
-                        </li>
-                        <li class="item">
-                            <div class="icon">
-                                <i class="fa-solid fa-phone"></i>
-                            </div>
-                            <div class="text">
-                                <p>+1 230 456 789-012 345 6789</p>
-                            </div>
-                        </li>
-                        <li class="item">
-                            <div class="icon">
-                                <i class="fa-solid fa-envelope"></i>
-                            </div>
-                            <div class="text">
-                                <p>exampledomain@domain.com</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="send-message">
-                    <input type="text" placeholder="Name" required>
-                    <input type="email" placeholder="Email" required>
-                    <input type="text" placeholder="Subject" required>
-                    <textarea placeholder="Message" required></textarea>
-                    <button type="submit">
-                        <i class="fa-solid fa-paper-plane"></i>
-                        Send Message
-                    </button>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="copyright-left">© Copyrights 2022 sApp All rights reserved.</div>
+                        <div class="copyright-right">
+                            <p>Made with <i class="fa-solid fa-heart"></i> By <a href="">Themeland</a></p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
         </div>
     </div>
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="column">
-                    <a href="">
-                        <img src="https://theme-land.com/sapp/demo/assets/img/logo/logo.png" alt="">
-                    </a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis non, fugit totam vel laboriosam vitae.</p>
-                    <div class="list-icons">
-                        <a href="" class="icon fb">
-                            <i class="fa-brands fa-facebook-f"></i>
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </i></a>
-                        <a href="" class="icon twitter">
-                            <i class="fa-brands fa-twitter"></i>
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                        <a href="" class="icon google">
-                            <i class="fa-brands fa-google-plus-g"></i>
-                            <i class="fa-brands fa-google-plus-g"></i>
-                        </a>
-                        <a href="" class="icon vine">
-                            <i class="fa-brands fa-vine"></i>
-                            <i class="fa-brands fa-vine"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="column">
-                    <h3>Useful Links</h3>
-                    <ul class="links">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="column">
-                    <h3>Product Help</h3>
-                    <ul class="products">
-                        <li><a href="">FAQ</a></li>
-                        <li><a href="">Privacy Policy</a></li>
-                        <li><a href="">Support</a></li>
-                        <li><a href="">Terms & Conditions</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="column">
-                    <h3>Download</h3>
-                    <div class="store">
-                        <a href="">
-                            <img src="https://theme-land.com/sapp/demo/assets/img/icon/google-play-black.png" alt="">
-                        </a>
-                        <a href="">
-                            <img src="https://theme-land.com/sapp/demo/assets/img/icon/app-store-black.png" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="bottom">
-                <div class="copyright-left">© Copyrights 2022 sApp All rights reserved.</div>
-                <div class="copyright-right">
-                    <p>Made with <i class="fa-solid fa-heart"></i> By <a href="">Themeland</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <script src="./script.js"></script>
 </body>
 

@@ -16,6 +16,8 @@ body {
     height: 84px;
     position: relative;
     z-index: 10;
+    display: flex;
+    align-items: center;
 }
 
 .header .content {
@@ -46,7 +48,11 @@ body {
 }
 
 .header .content .nav-pc {
-    width: 60%;
+    /* width: 60%; */
+}
+
+.menu-tablet {
+    display: none;
 }
 
 .nav-pc .list {
@@ -55,6 +61,7 @@ body {
     height: 100%;
     width: 100%;
 }
+
 
 .list .item {
     display: inline-block;
@@ -78,7 +85,7 @@ body {
 }
 
 
-/* thay doi */
+/* change */
 .item .sub-item {
     /* display: none; */
     display: block;
@@ -108,7 +115,7 @@ body {
     transform: translateY(0);
 }
 
-/* enđ thay doi */
+/* enđ change */
 
 .item .sub-item::before {
     content: '';
@@ -208,6 +215,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     position: relative;
     margin-top: 50px;
     z-index: 3;
@@ -274,7 +282,7 @@ body {
 
 .number-counting .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 100%;
 }
@@ -293,8 +301,8 @@ body {
     width: 1px;
     background-color: #222222;
     top: 60%;
-    right: 0;
-    transform: translateY(-50%);
+    right: -10%;
+    transform: translateY(-60%);
     opacity: 0.2;
 }
 
@@ -336,7 +344,8 @@ body {
 .features .container .premium {
     width: 20%;
     height: 30px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
     text-align: center;
     margin: 0 auto;
     border-radius: 30px;
@@ -390,16 +399,20 @@ body {
 .features .container .list-features {
     display: flex;
     width: 100%;
-    gap: 40px
+    gap: 40px;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .list-features .item {
     width: 35%;
-    padding: 58px;
+    padding: 50px;
     text-align: center;
     border-radius: 25px;
     box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.12);
     transition-duration: .5s;
+
 }
 
 .list-features .item:hover {
@@ -409,7 +422,7 @@ body {
 
 [data-aos][data-aos][data-aos-duration="400"],
 body[data-aos-duration="400"] [data-aos] {
-    transition-duration: 1.5s !important;
+    transition-duration: 1s !important;
 }
 
 .list-features .item img {
@@ -576,7 +589,7 @@ body[data-aos-duration="400"] [data-aos] {
 
 .process {
     width: 100%;
-    background-color: #7c4fe0;
+    background: linear-gradient(-47deg, #8731E8 0%, #4528DC 100%);
     padding: 112px 0;
 }
 
@@ -666,7 +679,8 @@ body[data-aos-duration="400"] [data-aos] {
 .slider-area .container .awesome {
     width: 20%;
     height: 30px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
     text-align: center;
     margin: 0 auto;
     border-radius: 30px;
@@ -777,7 +791,9 @@ body[data-aos-duration="400"] [data-aos] {
     /* width: 20%; */
     max-width: 228px;
     height: 30px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+
     text-align: center;
     margin: 0 auto;
     border-radius: 30px;
@@ -832,6 +848,8 @@ body[data-aos-duration="400"] [data-aos] {
     display: flex;
     width: 100%;
     gap: 30px;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
 }
 
 .list-feedback .item {
@@ -859,7 +877,7 @@ body[data-aos-duration="400"] [data-aos] {
 .list-feedback .item .feedback-text h4 {
     font-size: 22px;
     font-weight: 600;
-    line-height: 1.4;
+    line-height: 28px;
     color: #7c4fe0;
     margin-bottom: 10px;
 }
@@ -1634,7 +1652,8 @@ body[data-aos-duration="400"] [data-aos] {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
-    transition-duration: .5s;
+    transition-duration: .3s;
+    cursor: pointer;
 }
 
 .footer .container .row .column ul li a:hover {

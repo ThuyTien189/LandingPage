@@ -39,7 +39,27 @@ function slideShow() {
     slidesToShow: 4,
     slidesToScroll: 1,
     dots: true,
-    arrows: false
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 739,
+        settings: {
+        slidesToShow: 3
+      }
+      },
+      {
+        breakpoint: 574,
+        settings: {
+        slidesToShow: 2
+      }
+      },
+      {
+        breakpoint: 490,
+        settings: {
+        slidesToShow: 1
+        }
+      }
+       ]
   });
 }
 $(document).ready(slideShow)

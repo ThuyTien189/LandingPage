@@ -10,7 +10,10 @@ body {
     height: 100vh;
     font-family: 'Poppins', sans-serif;
 }
-
+.main {
+    position: relative;
+    z-index: 0;
+}
 .header {
     width: 100%;
     height: 84px;
@@ -677,7 +680,7 @@ body[data-aos-duration="400"] [data-aos] {
 }
 
 .slider-area .container .awesome {
-    width: 20%;
+    width: 22%;
     height: 30px;
     /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
     box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;

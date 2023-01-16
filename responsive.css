@@ -15,9 +15,15 @@
     }
 
     .menu-tablet {
-        display: block;
-        color: #fff;
+        position: fixed;
+        display: none;
+        background-color: rgba(255, 255, 255, .8);
         font-size: 36px;
+        width: 100%;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
     }
     .menu-tablet button {
         background-color: transparent;
@@ -25,6 +31,7 @@
         cursor: pointer;
     }
     .menu-tablet-icon {
+        display: block;
         color: #fff;
         font-size: 36px;
     }
@@ -32,27 +39,35 @@
         position: fixed;
         top: 0;
         bottom: 0;
-        width: 35%;
+        width: 60%;
         padding-top: 40px;
         background-color: #fff;
-        box-shadow: 0 0.5rem 1.875rem rgb(0 0 0 / 15%);
+        box-shadow: 0 10px 15px rgb(0 0 0 / 15%);
         border-radius: 0;
         z-index: 10;
         overflow-y: auto;
-        right: -100%;
+        overflow-x: hidden;
+        right: 0;
         transition: right 0.3s 0.2s;
     }
-    .nav-inner button {
+    .nav-inner .nav-inner-icon {
         width: 60px;
         padding: 10px;
         position: absolute;
         top: 0;
         right: 0;
         cursor: pointer;
-    }
-    .nav-inner-icon {
         color: #5B5B66;
         font-size: 16px;
+    }
+    .nav-inner-icon .cb_closeMenu {
+        position: absolute;
+        left: 0;
+        right: 25px;
+        top: 0;
+        bottom: 0;
+        opacity: 0;
+        cursor: pointer;
     }
     .nav-inner-list {
         display: flex;
@@ -60,19 +75,94 @@
         list-style-type: none;
         width: 100%;
     }
-    .nav-inner-list .item a {
+    .nav-inner-list .item {
+        position: relative;
+    }
+    .nav-inner-list .item .sub-item {
+        border: medium none;
+        border-radius: 0;
+        box-shadow: none;
+        position: static;
+        display: none;
+        visibility: visible;
+        opacity: 1;
+        transition: unset;
+        transform: unset;
+    }
+    .nav-inner-list .item .sub-item::before {
+        display: none;
+    }
+    .show_sub-item:checked ~ .sub-item {
+        display: block;
+    }
+    .nav-inner-list .item .sub-item a {
+        text-decoration: none;
+        display: block;
+        font-size: 14px;
+        color: #2c2e30;
+        padding-left: 20px;
+        font-weight: 600;
+        border: none;
+    }
+    .nav-inner-list .item .sub-item .sub-sub-item {
+        position: relative;
+    }
+    .nav-inner-list .item .sub-item .sub-sub-item .hidden-item {
+        border: medium none;
+        border-radius: 0;
+        box-shadow: none;
+        position: static;
+        display: none;
+        visibility: visible;
+        opacity: 1;
+        transition: unset;
+        transform: unset;
+    }
+    .nav-inner-list .item .sub-item .sub-sub-item::after {
+        border-top: 5px solid;
+        border-right: 5px solid transparent;
+        border-left: 5px solid transparent;
+        transition-duration: .3s;
+    }
+    .nav-inner-list .item .sub-item .sub-sub-item:hover::after {
+        transform: rotate(-90deg);
+    }
+    .nav-inner-list .item .sub-item .sub-sub-item a {
+        text-decoration: none;
+        display: block;
+        font-size: 14px;
+        color: #2c2e30;
+        padding-left: 20px;
+        font-weight: 600;
+        border: none;
+    }
+    .nav-inner-list .item .sub-item .sub-sub-item .hidden-item a {
+        font-size: 12px;
+        padding-left: 30px;
+        font-weight: 700;
+    }
+    .show_sub-sub-item {
+        opacity: 0;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+    }
+    .show_sub-sub-item ~ .hidden-item {
+        display: block;
+    }
+    .nav-inner-list .item > a {
         text-decoration: none;
         display: block;
         font-size: 16px;
         color: #444;
         padding: 20px;
         border-bottom: 1px solid #eee;
-
     }
     .nav-inner-list .item a i {
         color: #d3d3d3;
     }
-    .header-fixed .grid .content .nav-pc .menu-tablet button .menu-tablet-icon {
+    .menu-tablet .menu-tablet-icon {
         color: #5B5B66;
         font-size: 36px;
     }

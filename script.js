@@ -73,3 +73,19 @@ window.addEventListener("scroll", () => {
   {once: true}
 );
 AOS.init();
+
+const cb_showMenu = document.querySelector(".cb_showMenu");
+cb_showMenu.addEventListener("click", () => {
+  if(cb_showMenu.checked) {
+    document.querySelector(".menu-tablet").style.display = "block";
+    $('body').css({overflow: "hidden"})
+    cb_showMenu.checked = false; 
+  } 
+})
+const cb_hideMenu = document.querySelector(".cb_closeMenu");
+  cb_hideMenu.addEventListener("click", () => {
+  if(cb_hideMenu.checked) {
+    document.querySelector(".menu-tablet").style.display = "none";
+    cb_hideMenu.checked = false;
+  } 
+})

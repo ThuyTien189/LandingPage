@@ -86,6 +86,7 @@ const cb_hideMenu = document.querySelector(".cb_closeMenu");
   cb_hideMenu.addEventListener("click", () => {
   if(cb_hideMenu.checked) {
     document.querySelector(".menu-tablet").style.display = "none";
+    $('body').css({overflow: "unset"})
     cb_hideMenu.checked = false;
   } 
 })

@@ -34,6 +34,7 @@
         display: block;
         color: #fff;
         font-size: 36px;
+        transition-duration: .3s;
     }
     .menu-tablet .nav-inner {
         position: fixed;
@@ -48,7 +49,7 @@
         overflow-y: auto;
         overflow-x: hidden;
         right: 0;
-        transition: right 0.3s 0.2s;
+        opacity: 0;
     }
     .nav-inner .nav-inner-icon {
         width: 60px;
@@ -167,6 +168,7 @@
     .header-fixed .menu-tablet-icon {
         color: #5B5B66;
         font-size: 36px;
+        transition-duration: .3s;
     }
 
     /* number */

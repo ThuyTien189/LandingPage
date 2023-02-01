@@ -9,10 +9,36 @@ body {
     width: 100%;
     height: 100vh;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+.scrollUp {
+    position: fixed;
+    display: none;
+    height: 45px;
+    width: 40px;
+    right: 2%;
+    bottom: 3%;
+    border-radius: 4px;
+    background-color: rgba(35, 35, 35, 0.65);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out 0s;
+    z-index: 10;
+}
+.scrollUp:hover {
+    background-color: #666;
+}
+.scrollUp > a {
+    display: block;
+    height: 100%;
+    font-size: 22px;
+    color: #fff;
+    padding-top: 10px;
 }
 .main {
     position: relative;
     z-index: 0;
+    overflow: hidden;
 }
 .header {
     width: 100%;
@@ -56,6 +82,8 @@ body {
 
 .menu-tablet {
     display: none;
+    animation: menuAnimation .3s ease-in-out forwards;
+
 }
 .menu-tablet-icon {
     display: none;
@@ -76,6 +104,7 @@ body {
     width: 100%;
     top: 0;
     bottom: 0;
+    cursor: pointer;
 }
 .nav-pc .list {
     display: flex;
@@ -1710,6 +1739,48 @@ body[data-aos-duration="400"] [data-aos] {
 
 .footer .container .bottom .copyright-right a:hover {
     color: #7c4fe0;
+}
+
+@keyframes navbarAppear {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    
+}
+.nav-inner {
+    animation: navbarAppear .3s ease-in-out forwards;
+    animation-delay: .3s;
+}
+.nav-inner-hide-animation {
+    animation: hideMenuAnimation .3s ease-in-out forwards;
+
+}
+@keyframes menuAnimation {
+    from {
+        opacity: 0;
+        transform: translateX(-1000px);
+    } 
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+
+    }
+}
+@keyframes hideMenuAnimation {
+    from {
+        opacity: 1;
+        transform: translateX(0px);
+        
+    } 
+    to {
+        opacity: 0;
+        transform: translateX(1000px);
+    }
 }
 
 @keyframes changeHeader {
